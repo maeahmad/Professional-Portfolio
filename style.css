@@ -1,7 +1,10 @@
+.header {
+    background-color: rgb(178, 177, 199);
+}
+
+
 .header div ul {
     list-style-type: none;
-
-
 }
 
 .header div ul li {
@@ -11,10 +14,13 @@
 
 }
 
-
+.seo {
+    color: #961329;
+    background-color: silver;
+}
 
 body {
-    background: #ffffe3;
+    background: #e1e4e3;
     color: #253a52;
     padding: 25px;
     font-family: sans-serif;
@@ -29,18 +35,28 @@ h2 {
 .profile-image {
     border-bottom-left-radius: 90%;
     margin-inline-end: 4rem;
+
+
+}
+
+.image {
+    padding: 50px;
+    margin: 0 auto;
+    transition: transform 0.3s;
 }
 
 .profile-image:hover {
-    width: 40%;
-    height: 10%;
+    opacity: 0.6;
+}
+
+div.image:hover {
+    transform: scale(1.5)
 }
 
 .section1 {
     display: flex;
     padding-top: 50px;
-
-
+    align-items: center
 }
 
 .seemywork {
@@ -59,29 +75,61 @@ h2 {
     margin: 20px;
 }
 
-div {
+.articles {
+    margin-bottom: 80xp;
+}
+
+.articles div {
     padding: 1rem;
 }
 
-.image:hover {
-    width: 40%;
+
+div.image {
+    display: inline;
+    float: left;
 }
 
-@media (max-width: 1024px) {
+
+@media screen and (width < 768px) {
     .section1 {
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .profile-image {
+        width: auto;
     }
 }
 
-@media (max-width:1024px) {
-    .articles {
+@media screen and (width < 575px) {
+    .section1 {
         flex-direction: column;
+    }
+
+    .profile-image {
+        width: auto;
+    }
+
+}
+
+@media screen and (width < 768px) {
+    .articles {
+        flex-direction: row;
     }
 
     .image {
         width: 100%;
     }
 
+}
+
+@media screen and (width <575px) {
+    .articles {
+        flex-direction: column;
+    }
+
+    #image1-card {
+        width: 100%;
+    }
 }
 
 footer {
