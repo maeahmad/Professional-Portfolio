@@ -1,10 +1,12 @@
 .header {
     background-color: rgb(178, 177, 199);
+
 }
 
 
 .header div ul {
     list-style-type: none;
+
 }
 
 .header div ul li {
